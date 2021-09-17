@@ -393,7 +393,29 @@ main .forms h1 {
    padding-bottom:10px;
    color:white;
    font-size:20px;
+   cursor: pointer;
   }
+
+ main .forms .note {
+     border-radius: 10px;
+     color: white;
+     padding: 20px;
+left:15em;
+font-size:20px;
+  font-style: italic;
+  display: none;
+  position: absolute;
+width: 200px;
+height: 60px;
+background-color: lightskyblue;
+ } 
+
+
+.form1 h1:hover + .note{
+  display:block;
+ }
+
+
 
 main .form1 input[type=text], select {
     width: 100%;
@@ -464,6 +486,48 @@ main .appointment .check-box label{
     padding-right: 20px;
 }
 
+/*Map and loction at contact*/
+
+main .icon-flex {
+display: flex;
+align-items: center;
+justify-content:center;
+}
+
+main .icon-flex .icon {
+    display: flex;
+    flex-direction: column;
+    text-align: center;   
+    padding:0px 20px;
+}
+
+main .icon-flex .icon:hover {
+    opacity:0.5;
+    color: #007bb5;
+}
+
+main .icon-flex .icon i {
+    font-size:25px;
+    margin-bottom: 10px;
+}
+
+main .icon-flex .icon a {
+    text-decoration:unset;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+
+}
+
+main .address-location .contact-map iframe {
+    width:100%;
+    height:390px;
+    border-radius: 20px;
+}
+
+main .address-location .contact-map  {
+    height: 80%;
+}
 
 
 
@@ -859,8 +923,40 @@ main .appointment .check-box label{
     line-height:25px;
     font-size: 15px;
 }
-
-
+/*Map and loction at contact*/
+main .icon-flex {
+    display: unset;
+}
+    
+    main .icon-flex .icon {
+        display: flex;
+        flex-direction: column;
+        text-align: center;   
+        padding:0px 0px;
+    }
+    
+    main .icon-flex .icon i {
+        font-size:30px;
+        margin:20px 0;
+    }
+    
+    main .icon-flex .icon a {
+        text-decoration:unset;
+        color: white;
+        font-size: 10px;
+        cursor: pointer;
+        
+    }
+    
+    main .address-location .contact-map iframe {
+        height:200px;
+        border-radius: 10px;
+    }
+    
+    main .address-location .contact-map  {
+        height: 40%;
+    }
+    
 }
 /*smaller mobile view */
 @media screen and (max-width: 350px) {
