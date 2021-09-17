@@ -362,14 +362,112 @@ main .references-list img {
     width: 100%;
     text-transform: capitalize;
 }
+
 /*contact HTML*/
-.all-main-image .map {
-    height:400px;
-    width:500px;
-    object-fit: cover;
-    border-radius: 20px;
-    box-shadow: black 3px 3px 3px 3px;
+
+/* background contact,partners and review HTML*/
+
+main .main-grid {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    align-items: center;
+    overflow-x: scroll;
+    width: 100%;
+    height:100%;
+    padding: 10px;
+    grid-gap: 10px;
 }
+
+main .main-grid .forms {
+    background-color: darkgray;
+    border-radius: 20px;
+    width: 500px;
+    height:35em;
+    box-shadow: black 2px 2px;
+    padding: 20px;
+}
+
+  /*contact form*/
+main .forms h1 {
+   text-align: center;
+   padding-bottom:10px;
+   color:white;
+   font-size:20px;
+  }
+
+main .form1 input[type=text], select {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 11px;
+  }
+
+  main .form1 label {
+    font-size: 15px;
+  }
+  
+  main .forms input[type=submit]:hover {
+    background-color:lightseagreen;
+  }
+  
+  main .forms input[type=submit] {
+    width: 100%;
+    background-color:#26272b;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+  main .forms textarea[type=msg] {
+    width: 100%;
+    padding: 10px 20px;
+    margin:0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 15px;
+  }
+
+    /*appointment form*/
+main .appointment .appointment-grid {
+    display: grid;
+    grid-template-columns:auto auto;
+    grid-gap: 10px;
+}
+
+main .appointment label {
+    font-size: 15px;
+}
+
+main .appointment input[type="text"],input[type="date"],input[type="time"] {
+    width:100%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 11px;
+}
+
+main .appointment .check-box label{
+    width:100%;
+    line-height:30px;
+    padding-right: 20px;
+}
+
+
+
+
+
 /**larger tablet view**/
 @media screen and (max-width: 1024px) {
    /*nav bar section*/
@@ -720,7 +818,47 @@ main .references-list img {
         width: 100%;
    }
    /*contact HTML*/
- 
+
+     /*contact form*/
+   main .main-grid .forms {
+    width:350px;
+    border-radius: 10px;
+    height:100%;
+    box-shadow:unset;
+    padding:15px;
+   }
+
+   main .forms h1 {
+    font-size:15px;
+    padding:10px 0px;
+   }
+   main .form1 input[type=text], select {
+    margin:10px 0;
+    font-size:10px;
+  }
+  main .form1 label {
+    font-size: 13px;
+  }
+  main .forms input[type=submit] {
+    padding: 8px 0px;
+    margin: 8px 0;
+    border-radius: 3px;
+  }
+
+     /*appointment form*/
+  main .appointment .appointment-grid {
+    grid-gap:5px;
+    grid-template-columns:160px 160px;
+}
+
+main .appointment input[type="text"],input[type="date"],input[type="time"] {
+    font-size: 10px;
+}
+
+main .appointment .check-box label{
+    line-height:25px;
+    font-size: 15px;
+}
 
 
 }
@@ -786,5 +924,13 @@ main .references-list img {
    }
    /*contact HTML*/
 
-
+     /*contact form*/
+     main .main-grid .forms {
+        width:300px;
+       }
+   /*appointment form*/
+   main .appointment .appointment-grid {
+    grid-gap:7px;
+    grid-template-columns:130px 130px;
+}
 }
