@@ -5,7 +5,9 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200&display=swap" rel="stylesheet">
     <title>Navix Systems</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,7 +21,8 @@
         <div id="header1" class="header1">
           <div id="logo">
             <a href="index.html">
-              <img src="images/logo.png" alt="logo">
+              <h1> NavixSystems </h1>
+              <i class="fas fa-globe-africa"></i>
             </a>
           </div>
           <div class="social-media">
@@ -54,6 +57,7 @@
           </div>
         </div>
         <div class="dropdown">
+          <!-- fontawesome icon -->
           <button class="dropbtn">Communication <i class="fa fa-caret-square-o-down" aria-hidden="true"></i>
           </button>
           <div class="dropdown-content">
@@ -65,20 +69,116 @@
         <a href="partners.html">Our Partners</a>
         <a href="testimonials.html" class="active">Review</a>
         <a href="references.html" class="active"> References</a>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        <!-- fontawesome navbar -->
+        <a style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
       </nav>
       <!-- Use the main area to add the main content of the webpage -->
       <main>
-        <div id="all-main">
-          <div class="contact-grid">
-            <div class="form-contact forms"></div>
-            <div class="form-map forms"></div>
-            <div class="form-appointment forms"></div>
+        <div class="main-grid">
+          <div class="form1 forms">
+            <h1> Contact us <i class="fas fa-caret-square-right"></i>
+            </h1>
+            <!--scrolling left notice-->
+            <Span class="note">Slide left   <i class="far fa-hand-point-right"></i>
+            </Span>
+            <form>
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="email">Email</label>
+              <input type="text" id="Email" name="Email" placeholder="Your email..">
+              <label for="services">IT services :</label>
+              <select id="services" name="services">
+                <option value="services">Business IT</option>
+                <option value="services">Cloud Services</option>
+                <option value="services">Communication</option>
+                <option value="support">Technical & Service Support</option>
+                <option value="other">Others</option>
+              </select>
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Your subject..">
+              <textarea name="txtmessage" rows="3" type="msg" placeholder="Your messages.."></textarea>
+              <input onclick="alertClick()" type="submit" value="Submit">
+            </form>
+            <p id="submit" style="font-style: italic; font-size: smaller; color:green; text-transform: capitalize;"></p>
           </div>
-          
-
-
-
+          <div class="address-location forms">
+            <h1>
+              <i class="fas fa-caret-square-left"></i> Navix's Detail <i class="fas fa-caret-square-right"></i>
+            </h1>
+            <div class="contact-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6304.381722865954!2d144.95781591544184!3d-37.808998204367015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642cb23b34bab%3A0x62803dcf2fab9d01!2sAurora%20Melbourne%20Central!5e0!3m2!1sen!2sau!4v1631873635965!5m2!1sen!2sau"></iframe>
+            </div>
+            <div class="icon-flex">
+              <div class="icon mobile">
+                <i style="color:lightgreen;" class="fas fa-mobile-alt"></i>
+                <a href="tel:1300-80-2229"> 1300-80-2229 </a>
+              </div>
+              <div class="icon address">
+                <i style="color: red;" class="fas fa-map-marker-alt"></i>
+                <a target="blank" href="//www.google.com/maps/place/Aurora+Melbourne+Central/@-37.8106941,144.9612165,17z/data=!4m13!1m7!3m6!1s0x6ad642af0f11fd81:0x5045675218ce7e0!2sMelbourne+VIC+3004!3b1!8m2!3d-37.813611!4d144.963056!3m4!1s0x6ad642cb23b34bab:0x62803dcf2fab9d01!8m2!3d-37.809617!4d144.9623113"> 228 La Trobe St, Melbourne VIC 3000</a>
+              </div>
+              <div class="icon email">
+                <i style="color: wheat;" class="fas fa-paper-plane"></i>
+                <a href="mailto:admin@navix.com.au"> help@navix.com.au</a>
+              </div>
+            </div>
+          </div>
+          <div class="appointment forms">
+            <h1>
+              <i class="fas fa-caret-square-left"></i> Schedule an appointment
+            </h1>
+            <form>
+              <div class="appointment-grid">
+                <div class="box box1">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+                <div class="box">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+                <div class="box">
+                  <label for="mobile">Mobile</label>
+                  <input type="text" id="mobile" name="mobile" placeholder="Your mobile..">
+                </div>
+                <div class="box">
+                  <label for="email">Email</label>
+                  <input type="text" id="Email" name="Email" placeholder="Your email..">
+                </div>
+                <div class="box">
+                  <label for="Date">Date</label>
+                  <input type="date" id="date" name="date">
+                </div>
+                <div class="box">
+                  <label for="time">Time</label>
+                  <input type="time" id="time" name="time">
+                </div>
+              </div>
+              <div class="box check-box">
+                <label for="para">Please indicated how urgent is your appointment: </label>
+                <br>
+                <input type="radio" name="choice" id="ns" value="ns" class="svc">
+                <label for="normal">Normal</label>
+                <input type="radio" name="choice" id="srepair" value="srepair" class="svc">
+                <label for="urgent">Urgent</label>
+                <input type="radio" name="choice" id="lrepair" value="lrepair" class="svc">
+                <label for="Very-urgent">Very urgent</label>
+              </div>
+              <select id="services" name="services">
+                <option value="services">Business IT</option>
+                <option value="services">Cloud Services</option>
+                <option value="services">Communication</option>
+                <option value="support">Technical & Service Support</option>
+                <option value="other">Others</option>
+              </select>
+              <textarea name="txtmessage" rows="3" type="msg" placeholder="Your messages.."></textarea>
+              <input onclick="apptClick()" type="submit" value="Submit">
+              <p id="green" style="font-style: italic; font-size: smaller; color:green; text-transform: capitalize;"></p>
+              <p id="red" style="font-style: italic; font-size: smaller; color:red; text-transform: capitalize;"></p>
+            </form>
+          </div>
         </div>
       </main>
       <!-- Use the footer area to add webpage footer content -->
