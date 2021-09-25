@@ -114,7 +114,8 @@ body {
     }
   }
 
-.header1 #logo a h1 {
+.header1 #logo a p {
+    font-size:35px;
     padding-top: 5px;
     color:white;
     font-family: 'Spectral SC', serif;
@@ -351,6 +352,11 @@ main .references-list img {
     display: block;
     border-radius:5px;
 }
+
+main .references-list img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
 /*mains sharing to all HTML file*/
 #all-main {
     width: 100%;
@@ -372,6 +378,8 @@ main .references-list img {
     box-shadow: black 3px 3px 3px 3px;
 }
 .all-main-p {
+    overflow: auto;
+    height:400px ;
     font-size: 20px;
     font-weight: 100;
     box-shadow: gray 3px 3px 3px 3px;
@@ -553,6 +561,12 @@ border-radius: 50%;
     border-radius:50%;
   }
 
+  .all-main-image img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+
 .partner-grid .box{
 animation: 5s mymove1 ;
     }
@@ -647,7 +661,7 @@ main .review-flex .review-grid {
     }
 }
 /**larger tablet view**/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1150px) {
    /*nav bar section*/
     .topnav a {
         font-size: 16px;
@@ -909,7 +923,7 @@ main .review-flex .review-grid {
        padding:0 10px;
    }
 
-   .header1 #logo a h1 {
+   .header1 #logo a p {
        font-size: 15px;
        padding-top:10px;
    }
@@ -1055,7 +1069,6 @@ main .review-flex .review-grid {
    }
    /*responsive for all HTML main section img*/
     .all-main-image img {
-        height:100%;
         width:100%;
         object-fit: cover;
         box-shadow:unset;
@@ -1253,6 +1266,7 @@ main .review-flex .review-grid {
         display: block;
         border-radius:5px;
    }
+
    /*mains sharing to all HTML file*/
     #all-main {
         width: 100%;

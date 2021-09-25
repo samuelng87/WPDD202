@@ -11,6 +11,7 @@ function myFunction() {
 	}
 }
 
+/*JavaScript should be used only on Webpages 12, 13 and 14*/
 /*this is a function for slide photo in index , partner and review  HTML*/
 function showSlides() {
 	let i;
@@ -31,6 +32,8 @@ function showSlides() {
 	setTimeout(showSlides, 5000); // Change image every 10 seconds
 }
 
+
+/*JavaScript should be used only on Webpages 12, 13 and 14*/
 /*this is a function for contact details in contact HTML*/
 function alertClick() {
 	const text = 'sent'
@@ -39,6 +42,7 @@ function alertClick() {
 
 }
 
+/*JavaScript should be used only on Webpages 12, 13 and 14*/
 /*this is a function for appointment contact HTML*/
 function apptClick() {
 	let green;
