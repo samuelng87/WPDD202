@@ -560,7 +560,7 @@ border-radius: 50%;
     object-fit:cover;
     border-radius:50%;
   }
-#all-main .audio audio {
+ .audio audio {
     position: fixed;
     opacity:0.1;
     top: 10em;
@@ -568,7 +568,7 @@ border-radius: 50%;
     width:200px;
 }
 
-#all-main .audio audio:hover {
+ .audio audio:hover {
     transition: 1s;
     opacity:1;
     width:300px ;
