@@ -45,16 +45,13 @@ function alertClick() {
 /*JavaScript should be used only on Webpages 12, 13 and 14*/
 /*this is a function for appointment contact HTML*/
 function apptClick() {
-	let green;
-	let red;
+	let color = [green,red]
 	if (confirm('Your appointment will be scheduled and we will contact you one day in advance\n\nWill you be okay with that?')) {
-		green = "Appointment Confirmed";
-		document.getElementById("green").innerHTML = green;
+		color[0] = "Appointment Confirmed";
+		document.getElementById("green").innerHTML = color[0];
 		alert('Your appointment is set')
 	} else {
-		red = "Appointment Cancelled";
-		document.getElementById("red").innerHTML = red;
+		color[1] = "Appointment Cancelled";
+		document.getElementById("red").innerHTML = color[1];
 	}
-
-
 }
